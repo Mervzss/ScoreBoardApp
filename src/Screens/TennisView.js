@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 import { ButtonCounters } from '../components/Defaults'
 
@@ -64,8 +64,8 @@ class TennisView extends Component {
 
 
                     <View style={styles.middle}>
-                        <Text> 0-1</Text>
-                        <Text> 2nd </Text>
+                        <Text style={styles.middleText}> 0-1</Text>
+                        <Text style={styles.middleText}> 2nd </Text>
                     </View>
 
 
@@ -83,16 +83,16 @@ class TennisView extends Component {
 
                 <View style={styles.lowerView}>
                     <View style={styles.setScoreStyle}>
-                        <Text>SET 1</Text>
+                        <Text style={styles.setText}>SET 1</Text>
                     </View>
                     <View style={styles.setScoreStyle}>
-                        <Text>SET 2</Text>
+                        <Text style={styles.setText}>SET 2</Text>
                     </View>
                     <View style={styles.setScoreStyle}>
-                        <Text>SET 3</Text>
+                        <Text style={styles.setText}>SET 3</Text>
                     </View>
                     <View style={styles.setScoreStyle}>
-                        <Text>SET 4</Text>
+                        <Text style={styles.setText}>SET 4</Text>
                     </View>
 
                 </View>
@@ -108,62 +108,73 @@ export default TennisView;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#cbcbcb',
+        backgroundColor: 'black',
         flexDirection: 'column',
         //   justifyContent:'space-evenly'
     },
     upperView: {
         flex: .8,
-        backgroundColor: '#cbcbcb',
+        backgroundColor: 'black',
         flexDirection: 'row',
     },
     lowerView: {
         flex: .2,
-        backgroundColor: '#cbcbcb',
+        backgroundColor: 'black',
         flexDirection: 'row',
     },
     homeStyle: {
         width: '30%',
-        backgroundColor: '#aa43ff',
+        backgroundColor: 'black',
         alignItems: 'center'
     },
     guestStyle: {
         width: '30%',
-        backgroundColor: '#43ffee',
+        backgroundColor: 'black',
         alignItems: 'center'
     },
     middle: {
         width: '20%',
-        backgroundColor: '#cafef6'
+        backgroundColor: 'black',
+        justifyContent:'center',
+        alignItems:'center'
     },
     setScoreStyle: {
         width: '25%',
-        backgroundColor: '#e2fca4',
+        backgroundColor: 'black',
         alignItems: 'center'
 
     },
 
     // PARA SA TEXT
     homeText: {
-        color: '#7bfc4f',
+        color: '#ff0000',
         fontSize: 35,
         fontWeight: 'bold'
     },
     guestText: {
-        color: '#fea45d',
+        color: '#ffffff',
         fontSize: 35,
         fontWeight: 'bold'
     },
     numScoreHome: {
-        color: '#7bfc4f',
+        color: '#ff0000',
         fontSize: 150,
         fontWeight: 'bold'
     },
     numScoreGuest: {
-        color: '#fea45d',
+        color: '#ffffff',
         fontSize: 150,
         fontWeight: 'bold'
     },
+    middleText:{
+        fontSize:40,
+        color:'#67f1df',
+    },
+    setText:{
+        fontSize:10,
+        color:'#ffffff',
+        fontWeight: 'bold'
+    }
 
 
 

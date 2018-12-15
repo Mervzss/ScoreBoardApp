@@ -29,58 +29,58 @@ const styles = StyleSheet.create({
     buttonCounters: {
         width: '10%',
         justifyContent:'center',
-        backgroundColor: '#ff43e3'
+        backgroundColor: 'transparent'
     },
     homeButtonPlus: {
         backgroundColor: 'transparent',
-        borderColor: '#7bfc4f',
+        borderColor: '#ff0000',
         borderWidth: 2,
         justifyContent:'center',
         alignItems:'center',
         height:100
     },
     homeButtonTextPlus: {
-        color: '#7bfc4f',
+        color: '#ff0000',
         fontSize: 20,
         fontWeight: 'bold',
     },
     homeButtonMinus: {
         backgroundColor: 'transparent',
-        borderColor: '#7bfc4f',
+        borderColor: '#ff0000',
         borderWidth: 2,
         justifyContent:'center',
         alignItems:'center',
         height:60
     },
     homeButtonTextMinus: {
-        color: '#7bfc4f',
+        color: '#ff0000',
         fontSize: 20,
         fontWeight: 'bold'
     },
 
     guestButtonPlus: {
         backgroundColor: 'transparent',
-        borderColor: '#fea45d',
+        borderColor: '#ffffff',
         borderWidth: 2,
         justifyContent:'center',
         alignItems:'center',
         height:100
     },
     guestButtonTextPlus: {
-        color: '#fea45d',
+        color: '#ffffff',
         fontSize: 20,
         fontWeight: 'bold'
     },
     guestButtonMinus: {
         backgroundColor: 'transparent',
-        borderColor: '#fea45d',
+        borderColor: '#ffffff',
         borderWidth: 2,
         justifyContent:'center',
         alignItems:'center',
         height:60
     },
     guestButtonTextMinus: {
-        color: '#fea45d',
+        color: '#ffffff',
         fontSize: 20,
         fontWeight: 'bold'
     }
